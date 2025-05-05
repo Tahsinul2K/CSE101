@@ -8,7 +8,7 @@ int main(){
     int i, count=0;
     for(i=1;i<=4;i=i+1){
         scanf("%c%*c",&x); /*it takes space as an input*/
-        if(x>=48 && x<=57){
+        if(x>='0' && x<='9'){
             count++;
         }
     }
