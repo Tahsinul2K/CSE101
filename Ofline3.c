@@ -53,9 +53,9 @@ void remove_stop_words_all()
     for (int i = 0; i < token_count; i++)
     {
         flag = 0;
-        for (int stem_count = 0; stem_count < NUM_STOP_WORDS; stem_count++)
+        for (k= 0; k < NUM_STOP_WORDS; k++)
         {
-            if (strcmp(tokens[i], stop_words[stem_count]) == 0)
+            if (strcmp(tokens[i], stop_words[k]) == 0)
             {
                 flag = 1;
                 break;
