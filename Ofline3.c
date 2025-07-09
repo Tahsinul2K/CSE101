@@ -87,14 +87,14 @@ void tokenize_all()
         }
         else
         {
+            if(l>0)
             
-            
-                tokens[k][l] = '\0';
+            {tokens[k][l] = '\0';
                 k++;
                 l = 0;
-                j++;
-                token_count++;
-            
+                
+                token_count++;}
+            j++;
         }
         if (documents[i][j] == '\0')
         {
